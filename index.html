@@ -1,135 +1,162 @@
-import React from 'react';
-import { Github, Mail, MapPin, ExternalLink, Award, Code, Plane } from 'lucide-react';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Md. Tareq Islam | Aerospace Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-export default function Portfolio() {
-  return (
-    <div className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-blue-500 selection:text-white">
-      
-      {/* Hero Section */}
-      <header className="relative h-screen flex flex-col items-center justify-center bg-gradient-to-b from-slate-900 to-slate-950 px-6 overflow-hidden">
-        <div className="absolute top-20 w-48 h-48 rounded-full border-4 border-blue-600 p-1 shadow-2xl shadow-blue-500/20">
-          <img 
-            src="/profile.jpg" 
-            alt="Md. Tareq Islam" 
-            className="w-full h-full rounded-full object-cover grayscale hover:grayscale-0 transition duration-500"
-          />
-        </div>
-        <div className="mt-40 text-center animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-4">
-            Md. Tareq Islam
-          </h1>
-          <p className="text-xl md:text-2xl text-blue-500 font-semibold mb-6">
-            Aspiring Aerospace Engineer
-          </p>
-          <p className="max-w-2xl text-slate-400 text-lg leading-relaxed italic">
-            "Passionate about Aviation Innovation, Computer Science, and Global Problem Solving."
-          </p>
-        </div>
-        <div className="absolute bottom-10 animate-bounce">
-          <div className="w-1 h-12 bg-gradient-to-b from-blue-500 to-transparent rounded-full"></div>
-        </div>
-      </header>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-      {/* About Me Section */}
-      <section className="py-24 px-6 max-w-5xl mx-auto">
-        <div className="flex items-center gap-4 mb-12">
-          <div className="h-1 w-12 bg-blue-600"></div>
-          <h2 className="text-3xl font-bold text-white uppercase tracking-widest">About Me</h2>
-        </div>
-        <div className="bg-slate-900/50 p-8 rounded-3xl border border-slate-800 backdrop-blur-sm">
-          <p className="text-xl leading-relaxed text-slate-300 mb-6">
-            আমি একজন কৌতুহলী এবং বিজ্ঞানমনস্ক শিক্ষার্থী [cite: 301]। আমার মূল লক্ষ্য হলো রাশিয়ার উন্নত প্রযুক্তিতে **Aircraft Engineering** সম্পন্ন করা এবং বৈশ্বিক এভিয়েশন ইন্ডাস্ট্রিতে নতুন উদ্ভাবন আনা।
-          </p>
-          <p className="text-xl leading-relaxed text-slate-300">
-            সাইবার সিকিউরিটি এবং প্রযুক্তির প্রতি আমার গভীর আগ্রহ আমাকে ডাটা অ্যানালাইসিস এবং ডিজিটাল ফ্লুয়েন্সিতে দক্ষ করে তুলেছে [cite: 301, 338]। আমি বিশ্বাস করি, ইঞ্জিনিয়ারিং দক্ষতা এবং প্রযুক্তির সমন্বয়ে আমি একটি অর্থবহ পরিবর্তন আনতে পারবো [cite: 303]।
-          </p>
-        </div>
-      </section>
-
-      {/* The Vault - Professional Skills & Certifications */}
-      <section className="py-24 bg-slate-900/30 px-6">
-        <div className="max-w-5xl mx-auto">
-          <div className="flex items-center gap-4 mb-16">
-            <div className="h-1 w-12 bg-blue-600"></div>
-            <h2 className="text-3xl font-bold text-white uppercase tracking-widest">The Vault</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Technical Skills */}
-            <div className="p-8 bg-slate-900 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition group">
-              <Code className="text-blue-500 mb-6 group-hover:scale-110 transition" size={40} />
-              <h3 className="text-2xl font-bold text-white mb-4">Technical Expertise</h3>
-              <ul className="space-y-3 text-slate-400">
-                <li>• Professional MS Office & Excel (UY LAB) [cite: 361]</li>
-                <li>• Professional Graphic Design (UY LAB) [cite: 438]</li>
-                <li>• Basic Python Programming & Data Analysis [cite: 338]</li>
-              </ul>
-            </div>
-
-            {/* Modern Technology */}
-            <div className="p-8 bg-slate-900 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition group">
-              <Award className="text-blue-500 mb-6 group-hover:scale-110 transition" size={40} />
-              <h3 className="text-2xl font-bold text-white mb-4">Modern Technology</h3>
-              <ul className="space-y-3 text-slate-400">
-                <li>• AI Masterclass for Content Creators [cite: 420]</li>
-                <li>• AI Algorithms & Digital Innovation [cite: 338]</li>
-              </ul>
-            </div>
-
-            {/* Vocational Excellence */}
-            <div className="p-8 bg-slate-900 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition group">
-              <Plane className="text-blue-500 mb-6 group-hover:scale-110 transition" size={40} />
-              <h3 className="text-2xl font-bold text-white mb-4">Vocational & Safety</h3>
-              <ul className="space-y-3 text-slate-400">
-                <li>• NSDA Level-3 Driving (360 Hours) [cite: 375]</li>
-                <li>• High Discipline & Workplace OSH Standards [cite: 380]</li>
-              </ul>
-            </div>
-
-            {/* Social & Awareness */}
-            <div className="p-8 bg-slate-900 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition group">
-              <Github className="text-blue-500 mb-6 group-hover:scale-110 transition" size={40} />
-              <h3 className="text-2xl font-bold text-white mb-4">Social & Awareness</h3>
-              <ul className="space-y-3 text-slate-400">
-                <li>• RUSC Summer Science Camp 2018 [cite: 445]</li>
-                <li>• Adolescent Nutrition Campaign (GAIN)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership Section */}
-      <section className="py-24 px-6 max-w-5xl mx-auto">
-        <div className="bg-gradient-to-r from-blue-900/20 to-transparent p-12 rounded-3xl border border-blue-900/30">
-          <h2 className="text-3xl font-bold text-white mb-8">Leadership & Volunteering</h2>
-          <p className="text-xl text-slate-300 leading-relaxed">
-            আমি **Volunteers of Bangladesh**-এর প্রতিনিধি হিসেবে দায়িত্ব পালন করছি [cite: 349]। এটি আমাকে নেতৃত্ব দেওয়া, টিমওয়ার্ক এবং বড় ইভেন্ট ম্যানেজমেন্টে দক্ষ করে তুলেছে, যা একজন ইঞ্জিনিয়ারের জন্য অপরিহার্য [cite: 351]।
-          </p>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <footer className="py-24 bg-slate-950 border-t border-slate-900 px-6">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-12">Let's Connect</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <a href="mailto:tareqislam.pro@gmail.com" className="flex items-center justify-center gap-3 p-6 bg-slate-900 rounded-xl hover:bg-blue-600 transition duration-300 group">
-              <Mail className="group-hover:text-white" />
-              <span>tareqislam.pro@gmail.com</span>
-            </a>
-            <a href="https://wa.me/8801965202125" className="flex items-center justify-center gap-3 p-6 bg-slate-900 rounded-xl hover:bg-green-600 transition duration-300 group">
-              <ExternalLink className="group-hover:text-white" />
-              <span>WhatsApp Me</span>
-            </a>
-            <div className="flex items-center justify-center gap-3 p-6 bg-slate-900 rounded-xl">
-              <MapPin />
-              <span>Rajshahi, Bangladesh</span>
-            </div>
-          </div>
-          <p className="mt-20 text-slate-500">© 2025 Md. Tareq Islam. All Rights Reserved.</p>
-        </div>
-      </footer>
-    </div>
-  );
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
 }
+
+body{
+  background:#0b0f1a;
+  color:#ffffff;
+  line-height:1.6;
+}
+
+/* HERO SECTION */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:linear-gradient(135deg,#020617,#0f172a);
+  padding:40px;
+}
+
+.hero img{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  border:4px solid #38bdf8;
+  object-fit:cover;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  font-size:36px;
+  font-weight:700;
+}
+
+.hero span{
+  color:#38bdf8;
+}
+
+.hero p{
+  font-size:16px;
+  opacity:0.85;
+  margin-top:10px;
+}
+
+/* SECTION */
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+.section h2{
+  font-size:32px;
+  margin-bottom:20px;
+  color:#38bdf8;
+}
+
+.card{
+  background:#020617;
+  padding:25px;
+  border-radius:15px;
+  margin-bottom:20px;
+  border:1px solid #1e293b;
+}
+
+/* SKILLS GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/* CONTACT */
+.contact a{
+  display:block;
+  color:#38bdf8;
+  text-decoration:none;
+  margin-bottom:10px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+  font-size:14px;
+  opacity:0.7;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <img src="profile.jpg" alt="Md. Tareq Islam">
+    <h1>Md. Tareq Islam <br><span>Aspiring Aerospace Engineer</span></h1>
+    <p>Passionate about Aviation Innovation, Computer Science, and Global Problem Solving.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a science-background student deeply interested in Aerospace Engineering,
+      Cyber Security, and modern technology. My long-term goal is to study
+      <strong>Aircraft Engineering in Russia</strong> under a government scholarship.
+      I strongly believe in discipline, innovation, and global responsibility.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS & CERTIFICATIONS -->
+<section class="section">
+  <h2>The Vault – Skills & Certifications</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Technical Skills</h3>
+      <p>• Microsoft Office Certification</p>
+      <p>• Graphic Design Certification</p>
+    </div>
+
+    <div class="card">
+      <h3>Modern Technology</h3>
+      <p>• AI Masterclass Certification</p>
+    </div>
+
+    <div class="card">
+      <h3>Vocational Excellence</h3>
+      <p>• NSDA Level-3 Driving Certification</p>
+      <p>Demonstrates discipline & responsibility</p>
+    </div>
+
+    <div class="card">
+      <h3>Social & Awareness</h3>
+      <p>• GAIN Adolescent Nutrition</p>
+      <p>• Science Camp Participation</p>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section class="section">
+  <h2>Leadership & Volunteering</h2>
+  <div class="card">
